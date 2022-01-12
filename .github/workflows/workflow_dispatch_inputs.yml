@@ -1,0 +1,28 @@
+name: Testing workflow dispatch triggers
+
+on: 
+   workflow_dispatch: 
+     
+
+jobs: 
+  build: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: build
+        run: |
+            echo "this is build trigger"
+            echo "it is working"
+
+
+  test: 
+     runs-on: ubuntu-latest 
+     steps: 
+      - name: test
+        run: | 
+             echo "this is test trigger"
+             echo "this is working-test"
+                
+
+
+
+
