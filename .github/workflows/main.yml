@@ -43,7 +43,8 @@ jobs:
       
     - name: Testing secrets 
       run: |
-            echo: ${{ secrets.RTEST_SEC }}
+            echo "The Secrets would be masked by git automatically"
+            echo ${{ secrets.RTEST_SEC }}
           
  
       
